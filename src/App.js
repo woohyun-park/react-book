@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.css';
-import IterationSample from './IterationSample';
+import LifeCycleSample from './LifeCycleSample';
 
 const App = () => {
   return (
-    <IterationSample />
+    <>
+      <LifeCylceSample/>
+    </>
   )
 }
 

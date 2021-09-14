@@ -4,8 +4,8 @@ const ScrollBox = React.forwardRef((props, ref) => {
     useImperativeHandle(ref, () => ({
         scrollToBottom(){
             alert("scrollToBottom");
-            // const {scrollHeight, clientHeight} = ref;
-            // ref.scrollTop = scrollHeight - clientHeight;
+            const {scrollHeight, clientHeight} = ref;
+            ref.scrollTop = scrollHeight - clientHeight;
         }
     }))
     const style = {
