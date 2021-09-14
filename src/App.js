@@ -1,9 +1,9 @@
 import './App.css';
-import MyComponent from './MyComponent';
+import ValidationSample from './ValidationSample';
 
 function App() {
   return (
-    <MyComponent name="STEVEN" age="24"/>
+    <ValidationSample/>
   );
 }
 
