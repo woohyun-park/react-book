@@ -1,25 +1,37 @@
-import React, {useRef} from 'react';
-import ScrollBox from './ScrollBox';
+import React from 'react';
 import './App.css';
+import IterationSample from './IterationSample';
 
 const App = () => {
-  const scrollRef = useRef();
-
-  const handleClick = () => {
-    scrollRef.current.scrollToBottom();
-  }
-
   return (
-    <>
-      <ScrollBox ref={scrollRef}/>
-      <button onClick={handleClick}>
-        Click to Scroll
-      </button>
-    </>
-  );
+    <IterationSample />
+  )
 }
 
 export default App;
+
+// import React, {useRef} from 'react';
+// import ScrollBox from './ScrollBox';
+// import './App.css';
+
+// const App = () => {
+//   const scrollRef = useRef();
+
+//   const handleClick = () => {
+//     scrollRef.current.scrollToBottom();
+//   }
+
+//   return (
+//     <>
+//       <ScrollBox ref={scrollRef}/>
+//       <button onClick={handleClick}>
+//         Click to Scroll
+//       </button>
+//     </>
+//   );
+// }
+
+// export default App;
 
 // import React, { Component } from 'react';
 // import ScrollBox from './ScrollBox';
