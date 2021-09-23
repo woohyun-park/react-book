@@ -1,14 +1,34 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
-import Counter from './Counter';
+import LifeCycleSample from './LifeCycleSample';
+import ErrorBoundary from './ErrorBoundary';
 
-const App = () => {
-	return (
-		<>
-			<Counter />
-		</>
-	);
-};
+class App extends Component {
+	state = {
+		color: '#000000',
+	};
+
+	getRandomColor = () => {
+		return '#' + Math.floor(Math.random() * 16777215).toString(16);
+	};
+
+	handleClick = () => {
+		this.setState({
+			color: this.getRandomColor(),
+		});
+		console.log(this.getRandomColor());
+	};
+	render() {
+		return (
+			<>
+				<button onClick={this.handleClick}>랜덤 색상</button>
+				<ErrorBoundary>
+					<LifeCycleSample color={this.state.color} />
+				</ErrorBoundary>
+			</>
+		);
+	}
+}
 
 export default App;
 
