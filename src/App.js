@@ -1,14 +1,15 @@
-import React from 'react';
-import './App.css';
-import LifeCycleSample from './LifeCycleSample';
+import React from "react";
+import "./App.css";
+// import LifeCycleSample from "./LifeCycleSample";
+import Sample from "./Sample";
 
 const App = () => {
   return (
     <>
-      <LifeCylceSample/>
+      <Sample />
     </>
-  )
-}
+  );
+};
 
 export default App;
 
