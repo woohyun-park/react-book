@@ -1,14 +1,13 @@
-import React from "react";
-import "./App.css";
-// import LifeCycleSample from "./LifeCycleSample";
-import Sample from "./Sample";
+import React from 'react';
+import './App.css';
+import Counter from './Counter';
 
 const App = () => {
-  return (
-    <>
-      <Sample />
-    </>
-  );
+	return (
+		<>
+			<Counter />
+		</>
+	);
 };
 
 export default App;
