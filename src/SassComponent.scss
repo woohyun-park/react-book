@@ -1,0 +1,18 @@
+@import './styles/utils';
+
+.SassComponent {
+	display: flex;
+	.box {
+		background: red;
+		cursor: pointer;
+		transition: all 0.3s ease-in;
+		&.red {
+			background: $red;
+			@include square(1);
+		}
+		&.blue {
+			background: $blue;
+			@include square(10);
+		}
+	}
+}
