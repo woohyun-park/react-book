@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import SassComponent from './SassComponent';
+import CSSModule from './CSSModule';
 
 const App = () => {
 	return (
 		<>
-			<SassComponent />
+			<CSSModule wrapper={true} inverted="inverted" something={true} />
 		</>
 	);
 };
